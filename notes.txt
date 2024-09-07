@@ -1,0 +1,4 @@
+1. type > product [done]
+2. store > productslice [done]
+3. store > middleware [done]
+4. store > store.ts
