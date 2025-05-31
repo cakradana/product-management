@@ -45,7 +45,7 @@ const Navbar = () => {
         </label>
       </div>
       <div className="flex justify-between w-full">
-        <div className="text-xl font-semibold px-4">Pokemon Store</div>
+        <div className="text-xl font-semibold px-4">Toko Pokemon</div>
         <button onClick={toggleTheme} className="btn btn-circle btn-ghost">
           {themeIcon()}
         </button>
