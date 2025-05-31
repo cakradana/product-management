@@ -40,5 +40,5 @@ jobs:
             docker pull ghcr.io/${{ github.repository_owner }}/product-management:latest
             docker stop product-management || true
             docker rm product-management || true
-            docker run -d --name product-management -p 80:80 ghcr.io/${{ github.repository_owner }}/product-management:latest
+            docker run -d --name product-management -p 80:3000 ghcr.io/${{ github.repository_owner }}/product-management:latest
           EOF
