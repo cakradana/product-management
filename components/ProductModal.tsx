@@ -37,7 +37,7 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
 
     try {
       const response = await fetch(
-        "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0"
+        `${process.env.POKEMON_API_URL}/pokemon?limit=100000&offset=0`
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -57,7 +57,7 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
     setFetchError(null);
     try {
       const response = await fetch(
-        `https://pokeapi.co/api/v2/pokemon/${pokemonName.toLowerCase()}`
+        `${process.env.POKEMON_API_URL}/pokemon/${pokemonName.toLowerCase()}`
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
